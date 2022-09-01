@@ -1,5 +1,5 @@
 # Decimal-Remover
-Jquery based Decimal Remover
+Jquery plugin for Decimal Remover
 
 Set number of decimals after a decimal point easily. Please follow below instructions for integration.
 ```
