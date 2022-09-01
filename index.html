@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Decimal Remover</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="jquery.decimal-remover.js"></script>
+</head>
+
+<body>
+    <input type="text" id="t1" value="20.0000000">
+    <input type="text" id="resultDisplay"><br>
+    <input type="text" id="t2" value="20.0000000">
+    <input type="text" id="resultDisplay1"><br>
+    <input type="text" id="t3" value="rgb(100,200,133)">
+    <input type="text" id="resultDisplay2">
+    <script>
+        $(document).on('keyup', function () {
+            $('#t1').DecimalRounder();
+            $('#t2').DecimalRounder({
+                DecimalCount: 3,
+                displayEle: '#resultDisplay1'
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>
